@@ -330,3 +330,135 @@
 // for (let i = 0; i < divCollection.length; i++) {
 //   console.log(divCollection[i]);
 // }
+
+//2
+
+// document.body.innerHTML += ` <div class="myDiv">1</div>
+// <div class="myDiv">2</div>
+// <div class="myDiv">3</div>
+// <div class="myDiv">4</div>
+// <div class="myDiv">5</div>
+// <button id="btnColor">click here to blue</button>
+// <button id="btnText">click here to change text</button>
+// `;
+// document.querySelector("#btnColor").addEventListener("click", () => {
+//   let collection = document.querySelectorAll(".myDiv");
+//   for (let i = 0; i < collection.length; i++) {
+//     collection[i].style = "color: blue;";
+//   }
+// });
+// document.querySelector("#btnText").addEventListener("click", () => {
+//   let collection = document.querySelectorAll(".myDiv");
+//   for (let i = 0; i < collection.length; i++) {
+//     collection[i].textContent = "hello!";
+//   }
+// });
+
+//3 // 4
+
+// const user1 = {
+//   name: "uriel",
+//   password: 1948,
+//   email: "uri32655@gmail.com",
+//   userNAme: "urielBang",
+// };
+
+// for (const key in user1) {
+//   if (user1.hasOwnProperty.call(user1, key)) {
+//     document.body.innerHTML += `${key}`;
+//     document.body.innerHTML += `<br>`;
+//   }
+// }
+
+// for (const key in user1) {
+//   if (user1.hasOwnProperty.call(user1, key)) {
+//     document.body.innerHTML += `${user1[key]}`;
+//     document.body.innerHTML += `<br>`;
+//   }
+// }
+
+//5
+// document.body.innerHTML += ` <form id="myForm">
+// <label for="nameId">name:</label>
+// <input type="text" id="nameId" />
+
+// <label for="lastNAme">last name:</label>
+// <input type="text" id="lastNAme" />
+
+// <label for="ageId">age:</label>
+// <input type="text" id="ageId" />
+
+// <input type="submit" id="btnSubmit" />
+// </form>`;
+// document.querySelector("#myForm").addEventListener("submit", buildObject);
+
+// function buildObject(e) {
+//   const user = {};
+//   e.preventDefault();
+//   user.name = document.querySelector("#nameId").value;
+//   user.lastName = document.querySelector("#lastNAme").value;
+//   user.age = document.querySelector("#ageId").value;
+//   document.querySelector("#nameId").value = "";
+//   document.querySelector("#lastNAme").value = "";
+//   document.querySelector("#ageId").value = "";
+
+//   console.log(user);
+//   for (const key in user) {
+//     if (user.hasOwnProperty.call(user, key)) {
+//       document.body.innerHTML += `<h4> ${key}: ${user[key]}`;
+//     }
+//   }
+// }
+
+//6
+const usersArrayObjecst = [
+  {
+    name: "uriel",
+    lastName: "bengaev",
+    birthDay: "15.03.1998",
+    email: "uri32655@gmail.com",
+  },
+  {
+    name: "daniel",
+    lastName: "shiminov",
+    birthDay: "16.03.2017",
+    email: "uri32655@gmail.com",
+  },
+  {
+    name: "michael",
+    lastName: "shlomov",
+    birthDay: "13.02.2006",
+    email: "michael@gmail.com",
+  },
+  {
+    name: "shlomi",
+    lastName: "menahcem",
+    birthDay: "15.02.1996",
+    email: "shlomi@gmail.com",
+  },
+];
+
+document.body.innerHTML = `<table id="myTable">
+<thead>
+  <th>name</th>
+  <th>lastName</th>
+  <th>birthDay</th>
+ <th>email</th>
+</thead>
+<tbody id="myTbody"></tbody>`;
+
+for (let i = 0; i < usersArrayObjecst.length; i++) {
+  document.querySelector("#myTbody").innerHTML += `
+  <tr><td>${usersArrayObjecst[i].name}</td><td>${usersArrayObjecst[i].lastName}</td><td>${usersArrayObjecst[i].birthDay}</td><td>${usersArrayObjecst[i].email}</td>
+  `;
+}
+
+document.querySelector("#myTable").style =
+  "border:solid 2px; border-collapse:collapse;";
+
+document.querySelector("#myTbody").style =
+  "border:solid 2px; border-collapse:collapse;";
+const tdCollection = document.querySelectorAll("td");
+for (let i = 0; i < tdCollection.length; i++) {
+  tdCollection[i].style = `border:solid 2px;background-color:lightblue;`;
+}
