@@ -198,7 +198,7 @@
 //   }
 // }
 // picture with link
-// let index = 0;
+// index = 0;
 // for (let i = 0; i < 4; i++) {
 //   for (let j = 0; j < 3; j++) {
 //     document.body.innerHTML += `-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------`;
@@ -411,54 +411,54 @@
 // }
 
 //6
-const usersArrayObjecst = [
-  {
-    name: "uriel",
-    lastName: "bengaev",
-    birthDay: "15.03.1998",
-    email: "uri32655@gmail.com",
-  },
-  {
-    name: "daniel",
-    lastName: "shiminov",
-    birthDay: "16.03.2017",
-    email: "uri32655@gmail.com",
-  },
-  {
-    name: "michael",
-    lastName: "shlomov",
-    birthDay: "13.02.2006",
-    email: "michael@gmail.com",
-  },
-  {
-    name: "shlomi",
-    lastName: "menahcem",
-    birthDay: "15.02.1996",
-    email: "shlomi@gmail.com",
-  },
-];
+// const usersArrayObjecst = [
+//   {
+//     name: "uriel",
+//     lastName: "bengaev",
+//     birthDay: "15.03.1998",
+//     email: "uri32655@gmail.com",
+//   },
+//   {
+//     name: "daniel",
+//     lastName: "shiminov",
+//     birthDay: "16.03.2017",
+//     email: "uri32655@gmail.com",
+//   },
+//   {
+//     name: "michael",
+//     lastName: "shlomov",
+//     birthDay: "13.02.2006",
+//     email: "michael@gmail.com",
+//   },
+//   {
+//     name: "shlomi",
+//     lastName: "menahcem",
+//     birthDay: "15.02.1996",
+//     email: "shlomi@gmail.com",
+//   },
+// ];
 
-document.body.innerHTML = `<table id="myTable">
-<thead>
-  <th>name</th>
-  <th>lastName</th>
-  <th>birthDay</th>
- <th>email</th>
-</thead>
-<tbody id="myTbody"></tbody>`;
+// document.body.innerHTML = `<table id="myTable">
+// <thead>
+//   <th>name</th>
+//   <th>lastName</th>
+//   <th>birthDay</th>
+//  <th>email</th>
+// </thead>
+// <tbody id="myTbody"></tbody>`;
 
-for (let i = 0; i < usersArrayObjecst.length; i++) {
-  document.querySelector("#myTbody").innerHTML += `
-  <tr><td>${usersArrayObjecst[i].name}</td><td>${usersArrayObjecst[i].lastName}</td><td>${usersArrayObjecst[i].birthDay}</td><td>${usersArrayObjecst[i].email}</td>
-  `;
-}
+// for (let i = 0; i < usersArrayObjecst.length; i++) {
+//   document.querySelector("#myTbody").innerHTML += `
+//   <tr><td>${usersArrayObjecst[i].name}</td><td>${usersArrayObjecst[i].lastName}</td><td>${usersArrayObjecst[i].birthDay}</td><td>${usersArrayObjecst[i].email}</td>
+//   `;
+// }
 
-document.querySelector("#myTable").style =
-  "border:solid 2px; border-collapse:collapse;";
+// document.querySelector("#myTable").style =
+//   "border:solid 2px; border-collapse:collapse;";
 
-document.querySelector("#myTbody").style =
-  "border:solid 2px; border-collapse:collapse;";
-const tdCollection = document.querySelectorAll("td");
-for (let i = 0; i < tdCollection.length; i++) {
-  tdCollection[i].style = `border:solid 2px;background-color:lightblue;`;
-}
+// document.querySelector("#myTbody").style =
+//   "border:solid 2px; border-collapse:collapse;";
+// const tdCollection = document.querySelectorAll("td");
+// for (let i = 0; i < tdCollection.length; i++) {
+//   tdCollection[i].style = `border:solid 2px;background-color:lightblue;`;
+// }
